@@ -6,7 +6,7 @@ function App() {
   const tabController = useTabConroller({ initKey: "hello1" })
   return (
     <>
-      asd
+      asdasd
       <FTabDefaultHeader controller={tabController} panelProps={[{
         label: "hello",
         tabKey: "hello"
