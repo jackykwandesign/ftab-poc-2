@@ -1,14 +1,13 @@
-import React from 'react';
-import { FTabDefaultHeader, FTabPanel, FTabs, useTabConroller } from './components/FTab';
+import React from 'react'
+import { FTabDefaultHeader, FTabPanel, FTabs, useTabConroller } from './components/FTab'
 
-
-function App() {
-  const tabController = useTabConroller({ initKey: "hello1" })
+function App () {
+  const tabController = useTabConroller({ initKey: 'hello1' })
   return (
     <>
       <FTabDefaultHeader controller={tabController} panelProps={[{
-        label: "hello",
-        tabKey: "hello"
+        label: 'hello',
+        tabKey: 'hello'
       }]} />
       <div>
         <FTabs
@@ -25,7 +24,7 @@ function App() {
 
       <button onClick={() => tabController.setTabKey('hello2')}>asd</button>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
